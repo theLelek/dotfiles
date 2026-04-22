@@ -1,4 +1,3 @@
-# dotfiles
 Distro: Kubuntu
 Terminal: Kitty
 Bar: Waybar
@@ -12,7 +11,7 @@ Clone into `~/files/` — cloning elsewhere may break configs. (not sure haven't
 git clone <url> ~/files
 ```
 
-Symlink with Stow (target must be set to `~`):
+when using ~/files stow target must be set to `~`:
 
 ```bash
 stow -t ~ <directory>
