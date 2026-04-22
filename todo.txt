@@ -1,0 +1,8 @@
+
+setup.sh doesnt properly work for changing default terminal emulator
+
+kitty:
+- change look of tabs (maybe use custom function)
+- blur on backround doesnt work (probably an actuall bug) 
+
+
