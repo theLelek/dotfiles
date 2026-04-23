@@ -118,5 +118,6 @@ fi
 
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 cbonsai -l & read -n 1; kill %1; clear
 
