@@ -1,4 +1,5 @@
 Distro: Kubuntu
+Desktop env: Kde
 Terminal: Kitty
 Bar: Waybar
 Ide: Neovim
@@ -25,3 +26,8 @@ after setting up font dont forget to update cache:
 fc-cache -fv
 fc-list | grep -i "font-name"  # verify
 ```
+
+
+sadly even the user kdeglobal file can sometimes change after updating thus keep in mind that the kde config in 
+kde/.config/kdeglobals may need to be fixed manually
+
