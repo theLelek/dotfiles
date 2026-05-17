@@ -133,8 +133,8 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
-DirSelectDialog Size=960,540
-History Items[$e]=file:$HOME/files/other/MyPersonalWebsite_Neu,file:$HOME/files/notes/mainNotes,file:$HOME/files/,file:$HOME/files/notes/mainNotes,file:$HOME/files/obsidian
+DirSelectDialog Size=720,960
+History Items[$e]=file:$HOME/files/other/gaming/dolphin_emulator,file:$HOME/files/other/MyPersonalWebsite_Neu,file:$HOME/files/notes/mainNotes,file:$HOME/files/,file:$HOME/files/notes/mainNotes,file:$HOME/files/obsidian
 Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\x8c\x00\x00\x02\xa8\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
 
 [General]
