@@ -27,6 +27,11 @@ fc-cache -fv
 fc-list | grep -i "font-name"  # verify
 ```
 
+### syncthing
+seting up syncthing deamon requires root privileges because it creates a unit file for systemd
+
+
+
 
 sadly even the user kdeglobal file can sometimes change after updating thus keep in mind that the kde config in 
 kde/.config/kdeglobals may need to be fixed manually
