@@ -1,0 +1,5 @@
+the kdeglobals file:
+- modifes kitty to be the default terminal
+- sets single click to true
+- disables animations
+
