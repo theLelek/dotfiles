@@ -19,6 +19,7 @@ blurEnabled=false
 dialogparentEnabled=false
 dimscreenEnabled=false
 fullscreenEnabled=false
+translucencyEnabled[$d]
 
 [Tiling][1eed1c94-33da-4a64-929c-15b928c12751][171ec646-34ac-4bdd-8d0c-cf87a44a6914]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
