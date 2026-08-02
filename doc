@@ -3,3 +3,5 @@ the kdeglobals file:
 - sets single click to true
 - disables animations
 
+setup.sh = sets kitty as default shell on kde
+
