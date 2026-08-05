@@ -1,0 +1,14 @@
+
+hl.env("LIBVA_DRIVER_NAME", "nvidia")
+hl.env("__GLX_VENDOR_LIBARY_NAME", "nvidia")
+
+local terminal = "kitty"
+
+local mainMod = "MOD1"
+
+--hl.bind(mainMod .. " + M", hl.dsp.exec_cmd(terminal))
+
+bind = $mainMod, q, exec, kitty
+
+
+-- hl.bind(mainMod .. " + M", h1.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2> &1
