@@ -1,12 +1,12 @@
 # dotfiles
 
-- **Distro:** Kubuntu
-- **Desktop environment:** KDE Plasma
-- **Shell:** Bash
-- **Prompt:** Starship
-- **Terminal:** Kitty
-- **Bar:** Waybar
-- **Terminal editor:** Neovim
+- Distro: Arch 
+- Wayland Compositor: Hyprland
+- Shell: Bash
+- Prompt: Starship
+- Terminal: Kitty
+- Bar: Waybar
+- Terminal editor: Neovim
 
 ## TODO
 
