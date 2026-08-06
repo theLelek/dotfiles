@@ -17,6 +17,8 @@ local terminal    = "kitty"
 local fileManager = "dolphin"
 local menu        = "hyprlauncher"
 
+hl.bind("SUPER + F", hl.dsp.exec_cmd("rofi -show run"))
+
 
 -------------------
 ---- AUTOSTART ----
