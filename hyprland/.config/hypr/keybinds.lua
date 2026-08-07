@@ -2,7 +2,7 @@ local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
 -- applications
 
-hl.bind("SUPER + F", hl.dsp.exec_cmd("rofi -show run"))
+hl.bind("SUPER + F", hl.dsp.exec_cmd("rofi -show drun"))
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(terminal))
 
 -- move 
