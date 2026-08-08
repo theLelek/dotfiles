@@ -1,6 +1,12 @@
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
+-- shortcuts
  hl.bind(mainMod .. " + SHIFT + P", hl.dsp.layout("togglesplit"))    -- dwindle only
+
+ hl.bind(
+    mainMod .. " + SHIFT + F",
+    hl.dsp.window.fullscreen()
+)
 
 -- applications
 

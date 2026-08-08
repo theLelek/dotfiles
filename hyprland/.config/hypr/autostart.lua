@@ -1,5 +1,4 @@
 print("started autostart.lua")
 hl.on("hyprland.start", function ()
     print("started hyprpaper")
-    hl.exec_cmd("hyprpaper")
 end)
