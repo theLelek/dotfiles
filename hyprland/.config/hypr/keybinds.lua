@@ -38,17 +38,36 @@ hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special("magic"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 
+
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
-for i = 1, 10 do
+
+hl.workspace_rule({workspace = "r[0-5]", monitor="DP-3"})
+hl.workspace_rule({workspace = "r[6-9]", monitor="DP-2"})
+
+-- main monitor
+for i = 1, 5 do
     local key = i % 10 -- 10 maps to key 0
     hl.bind(mainMod .. " + " .. key,             hl.dsp.focus({ workspace = i}))
     hl.bind(mainMod .. " + SHIFT + " .. key,     hl.dsp.window.move({ workspace = i }))
 end
 
--- Scroll through existing workspaces with mainMod + scroll
-hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
-hl.bind(mainMod .. " + mouse_up",   hl.dsp.focus({ workspace = "e-1" }))
+-- Second monitor
+hl.bind(mainMod .. " + Q", hl.dsp.focus({ workspace = 6 }))
+hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.window.move({ workspace = 6 }))
+
+hl.bind(mainMod .. " + W", hl.dsp.focus({ workspace = 7 }))
+hl.bind(mainMod .. " + SHIFT + W", hl.dsp.window.move({ workspace = 7 }))
+
+hl.bind(mainMod .. " + E", hl.dsp.focus({ workspace = 8 }))
+hl.bind(mainMod .. " + SHIFT + E", hl.dsp.window.move({ workspace = 8 }))
+
+hl.bind(mainMod .. " + R", hl.dsp.focus({ workspace = 9 }))
+hl.bind(mainMod .. " + SHIFT + R", hl.dsp.window.move({ workspace = 9 }))
+
+
+
+
 
 -- Move/resize windows with mainMod + LMB/RMB and dragging
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
@@ -68,5 +87,15 @@ hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = tr
 hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
 
+
+-- Scroll through existing workspaces with mainMod + scroll
+-- hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
+-- hl.bind(mainMod .. " + mouse_up",   hl.dsp.focus({ workspace = "e-1" }))
+
+
+
+-- Scroll through existing workspaces with mainMod + scroll
+-- hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
+-- hl.bind(mainMod .. " + mouse_up",   hl.dsp.focus({ workspace = "e-1" }))
 
 
