@@ -41,10 +41,6 @@ hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:mag
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
-
-hl.workspace_rule({workspace = "r[0-5]", monitor="DP-3"})
-hl.workspace_rule({workspace = "r[6-9]", monitor="DP-2"})
-
 -- main monitor
 for i = 1, 5 do
     local key = i % 10 -- 10 maps to key 0
