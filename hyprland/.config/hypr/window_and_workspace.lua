@@ -14,13 +14,13 @@ hl.workspace_rule({ workspace = "9", monitor = "DP-2" })
 hl.window_rule({
     name      = "move-vesktop",
     match     = { class = "vesktop" },
-    workspace = "6",
+    workspace = "7",
 })
 
 hl.window_rule({
     name      = "move-obsidian",
     match     = { class = "md.Obsidian" },
-    workspace = "7",
+    workspace = "6",
 })
 hl.window_rule({
     name      = "move-firefox",
