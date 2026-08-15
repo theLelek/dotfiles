@@ -12,6 +12,7 @@ local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("rofi -show drun"))
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(terminal))
+hl.bind(mainMod .. " + ESCAPE", hl.dsp.exec_cmd("hyprlock"))
 
 -- move through windows
 hl.bind(mainMod .. " + H",  hl.dsp.focus({ direction = "left" }))
