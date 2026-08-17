@@ -13,6 +13,8 @@ local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("rofi -show drun"))
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + ESCAPE", hl.dsp.exec_cmd("hyprlock"))
+hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("hyprshot -m region"))
+
 
 -- move through windows
 hl.bind(mainMod .. " + H",  hl.dsp.focus({ direction = "left" }))
@@ -35,9 +37,8 @@ hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 
 
 -- Example special workspace (scratchpad)
-hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special("magic"))
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
-
+-- hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special("magic"))
+-- hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 
 -- Switch workspaces with mainMod + [0-9]
