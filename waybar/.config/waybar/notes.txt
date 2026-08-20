@@ -1,0 +1,7 @@
+logout (arch logo)   workspaes          
+
+time / date     screen brightness    (audio    mic   bluetooth    lan)     poweroff
+
+maybe for labtop:
+- battery
+- perfomance mode

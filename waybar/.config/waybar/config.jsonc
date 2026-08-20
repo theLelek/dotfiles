@@ -2,31 +2,22 @@
     "layer": "top",
 
     "modules-left": ["hyprland/workspaces"],
-//    "modules-center": ["hyprland/window"],
-    "modules-right": ["battery", "clock"],
+    "modules-center": ["clock"],
+    "modules-right": ["clock"],
 
     "hyprland/window": {
         "max-length": 50
     },
     "clock": {
-        "format-alt": "{:%a, %d. %b  %H:%M}"
+        "format-alt": "{:%a, %d. %b  %H:%M}",
+        "timezone": ""
     },
 
     "hyprland/workspaces": {
 	    "format": "{icon}",
 	    "format-icons": {
-/*		    "1": "",
-		    "2": "",
-		    "3": "",
-		    "4": "",
-		    "5": "", */
 		    "visible": "",
 		    "default": ""
 	    }
-/*	    "persistent-workspaces": {
-		    "*": 2, // 5 workspaces by default on every monitor
-		    "DP-2": 4 // but only three on HDMI-A-1
-
-	    }*/
     }
 }
