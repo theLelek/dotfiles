@@ -1,23 +1,11 @@
-{
+[{
     "layer": "top",
+    "output": "DP-3",
+    "include": "bar.jsonc"
+}, {
+    "layer": "top",
+    "output": "DP-2",
+    "include": "bar.jsonc",
+    "position": "left"
+}]
 
-    "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["clock"],
-    "modules-right": ["clock"],
-
-    "hyprland/window": {
-        "max-length": 50
-    },
-    "clock": {
-        "format-alt": "{:%a, %d. %b  %H:%M}",
-        "timezone": ""
-    },
-
-    "hyprland/workspaces": {
-	    "format": "{icon}",
-	    "format-icons": {
-		    "visible": "",
-		    "default": ""
-	    }
-    }
-}
