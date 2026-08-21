@@ -1,9 +1,8 @@
 [{
-    "layer": "top",
     "output": "DP-3",
-    "include": "bar.jsonc"
+    "include": "bar.jsonc",
+    "position": "right"
 }, {
-    "layer": "top",
     "output": "DP-2",
     "include": "bar.jsonc",
     "position": "left"
