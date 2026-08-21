@@ -3,18 +3,11 @@ local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 -- shortcuts
  hl.bind(mainMod .. " + SHIFT + P", hl.dsp.layout("togglesplit"))    -- dwindle only
 
- hl.bind(
-    mainMod .. " + SHIFT + F",
-    hl.dsp.window.fullscreen()
-)
-
 -- applications
-
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("rofi -show drun"))
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + ESCAPE", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("hyprshot -m region"))
-
 
 -- move through windows
 hl.bind(mainMod .. " + H",  hl.dsp.focus({ direction = "left" }))
@@ -33,12 +26,6 @@ local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
--- hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
-
-
--- Example special workspace (scratchpad)
--- hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special("magic"))
--- hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 
 -- Switch workspaces with mainMod + [0-9]
@@ -53,19 +40,12 @@ end
 -- Second monitor
 hl.bind(mainMod .. " + Q", hl.dsp.focus({ workspace = 6 }))
 hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.window.move({ workspace = 6 }))
-
 hl.bind(mainMod .. " + W", hl.dsp.focus({ workspace = 7 }))
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.window.move({ workspace = 7 }))
-
 hl.bind(mainMod .. " + E", hl.dsp.focus({ workspace = 8 }))
 hl.bind(mainMod .. " + SHIFT + E", hl.dsp.window.move({ workspace = 8 }))
-
 hl.bind(mainMod .. " + R", hl.dsp.focus({ workspace = 9 }))
 hl.bind(mainMod .. " + SHIFT + R", hl.dsp.window.move({ workspace = 9 }))
-
-
-
-
 
 -- Move/resize windows with mainMod + LMB/RMB and dragging
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
@@ -86,14 +66,31 @@ hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = tr
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
 
 
--- Scroll through existing workspaces with mainMod + scroll
--- hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
--- hl.bind(mainMod .. " + mouse_up",   hl.dsp.focus({ workspace = "e-1" }))
+local MAX_ZOOM = 3
+local MIN_ZOOM = 1
+local ZOOM_TOGGLE_FACTOR = 1.5
 
+---@param offset number
+---@return nil
+local function zoom(offset)
+    local current = hl.get_config("cursor.zoom_factor")
+    if offset ~= nil then
+        current = current + offset
+    elseif current ~= MIN_ZOOM then
+        current = MIN_ZOOM
+    else
+        current = ZOOM_TOGGLE_FACTOR
+    end
+    current = math.max(MIN_ZOOM, math.min(MAX_ZOOM, current))
+    hl.config({ cursor = { zoom_factor = current } })
+end
 
-
--- Scroll through existing workspaces with mainMod + scroll
--- hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
--- hl.bind(mainMod .. " + mouse_up",   hl.dsp.focus({ workspace = "e-1" }))
-
-
+hl.bind("SUPER + plus", function()
+    zoom(0.5)
+end)
+hl.bind("SUPER + minus", function()
+    zoom(-0.5)
+end)
+hl.bind("SUPER + SHIFT + minus", function()
+    zoom()
+end)
