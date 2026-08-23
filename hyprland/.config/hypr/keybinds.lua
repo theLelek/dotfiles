@@ -8,6 +8,7 @@ hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("rofi -show drun"))
 hl.bind(mainMod .. " + T", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + ESCAPE", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("hyprshot -m region"))
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("hyprpicker -a"))
 
 -- move through windows
 hl.bind(mainMod .. " + H",  hl.dsp.focus({ direction = "left" }))
