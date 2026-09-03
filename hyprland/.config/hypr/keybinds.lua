@@ -1,7 +1,9 @@
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
 -- shortcuts
- hl.bind(mainMod .. " + SHIFT + P", hl.dsp.layout("togglesplit"))    -- dwindle only
+hl.bind(mainMod .. " + SHIFT + P", hl.dsp.layout("togglesplit"))    -- dwindle only
+
+hl.bind("SUPER + F11", hl.dsp.window.fullscreen())
 
 -- applications
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("rofi -show drun"))
