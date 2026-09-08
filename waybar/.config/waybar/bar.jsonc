@@ -3,8 +3,8 @@
 
 
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["clock"],
-    "modules-right": ["clock"],
+    "modules-center": ["wireplumber"],
+    "modules-right": ["clock", "wireplumber"],
 
     "hyprland/workspaces": {
         "format": "{icon}",
@@ -40,5 +40,13 @@
 		    "on-scroll-up": "shift_up",
 		    "on-scroll-down": "shift_down"
 	    }
+    },
+
+    "wireplumber": {
+	    "format": "{volume}%",
+	    "format-muted": "",
+	    "on-click": "wiremix",
+        "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
+        "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
     }
 }
