@@ -1,5 +1,18 @@
+* {
+/*    font-family: JetBrainsMono Nerd Font; */
+    font-size: 13px;
+    min-height: 0;
+    color: #8b4838;
+}
+
+window#waybar {
+    background: #fdf7f4;
+}
+
 label.module {
-    padding: 0 10px;
-    box-shadow: inset 0 -3px;
-    color: red;
+    padding: 20px 5 20 5;
+}
+
+.highlighted {
+    color: pink;
 }
