@@ -1,12 +1,12 @@
 * {
-/*    font-family: JetBrainsMono Nerd Font; */
+    font-family: JetBrainsMono Nerd Font;
     font-size: 13px;
     min-height: 0;
-    color: #8b4838;
+    color: #cdd6f4;
 }
 
 window#waybar {
-    background: #fdf7f4;
+    background: #1e1e2e;
 }
 
 label.module {
