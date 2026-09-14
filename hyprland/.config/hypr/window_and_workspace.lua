@@ -18,7 +18,7 @@ hl.window_rule({
 
 hl.window_rule({
     name      = "move-obsidian",
-    match     = { class = "md.Obsidian" },
+    match     = { class = "md.obsidian.Obsidian" },
     workspace = "6",
 })
 hl.window_rule({
