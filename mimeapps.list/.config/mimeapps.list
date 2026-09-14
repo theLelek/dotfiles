@@ -1,0 +1,17 @@
+[Added Associations]
+application/pdf=org.mozilla.firefox.desktop;
+image/png=org.mozilla.firefox.desktop;org.kde.kolourpaint.desktop;org.kde.gwenview.desktop;
+text/html=org.mozilla.firefox.desktop;nvim.desktop;vim.desktop;
+
+[Default Applications]
+application/pdf=org.mozilla.firefox.desktop;
+image/png=org.mozilla.firefox.desktop;
+text/html=org.mozilla.firefox.desktop;
+x-scheme-handler/jetbrains=jetbrainsd.desktop
+x-scheme-handler/rpi-imager=com.raspberrypi.rpi-imager-uri-handler.desktop
+
+text/html=org.mozilla.firefox.desktop;
+x-scheme-handler/http=org.mozilla.firefox.desktop;
+x-scheme-handler/https=org.mozilla.firefox.desktop;
+
+[Removed Associations]
