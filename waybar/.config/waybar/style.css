@@ -2,11 +2,11 @@
     font-family: JetBrainsMono Nerd Font;
     font-size: 13px;
     min-height: 0;
-    color: #cdd6f4;
+    color: #ffffff;
 }
 
 window#waybar {
-    background: #1e1e2e;
+    background: #2b2a33;
 }
 
 label.module {
