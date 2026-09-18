@@ -10,7 +10,7 @@ window#waybar {
 }
 
 label.module {
-    padding: 9px 5px 9px 5px;
+    padding: 9px 20px 9px 20px;
 }
 
 .highlighted {
