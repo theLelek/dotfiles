@@ -16,7 +16,7 @@
     "clock": {
         "name": "highlighted",
         "timezone": "",
-	    "format": "{:%R\n%a\n%d.%m}",
+	    "format": "{:%R %a %d.%m}",
 	    "tooltip-format": "<tt><small>{calendar}</small></tt>",
 	    "calendar": {
 		    "mode"             : "year",
