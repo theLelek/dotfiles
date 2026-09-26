@@ -1,10 +1,24 @@
 [{
     "output": "DP-3",
     "include": "bar.jsonc",
-    "position": "top"
+    "position": "top",
+
+    "custom/brightness": {
+        "format": "☀{}%",
+        "exec": "ddcutil getvcp 10 --display 1 | awk -F'current value = ' '{print $2}' | cut -d',' -f1",
+        "on-scroll-up": "./increase_brightness.sh 1",
+        "on-scroll-down": "./decrease_brightness.sh 1"
+    },
 }, {
     "output": "DP-2",
     "include": "bar.jsonc",
-    "position": "top"
+    "position": "top",
+
+    "custom/brightness": {
+        "format": "☀{}%",
+        "exec": "ddcutil getvcp 10 --display 1 | awk -F'current value = ' '{print $2}' | cut -d',' -f1",
+        "on-scroll-up": "./increase_brightness.sh 2",
+        "on-scroll-down": "./decrease_brightness.sh 2"
+    },
 }]
 

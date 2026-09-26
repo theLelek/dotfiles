@@ -3,7 +3,7 @@
 
     "modules-left": ["hyprland/workspaces"],
     "modules-center": [],
-    "modules-right": ["clock", "wireplumber"],
+    "modules-right": ["clock", "custom/brightness", "wireplumber"],
 
     "hyprland/workspaces": {
         "format": "{icon}",
@@ -26,7 +26,6 @@
 		    "on-scroll-down": "shift_down"
 	    }
     },
-
     "wireplumber": {
         "name": "highlighted",
 	    "format": "{volume}%",
