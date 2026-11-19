@@ -13,5 +13,6 @@ x-scheme-handler/rpi-imager=com.raspberrypi.rpi-imager-uri-handler.desktop
 text/html=org.mozilla.firefox.desktop;
 x-scheme-handler/http=org.mozilla.firefox.desktop;
 x-scheme-handler/https=org.mozilla.firefox.desktop;
+x-scheme-handler/claude-cli=claude-code-url-handler.desktop
 
 [Removed Associations]
